@@ -8,9 +8,9 @@ terraform {
       version = "5.26.0"
     }
   }
-
+  
   backend "s3" {
-    bucket = "glojuara-terraform-tfstate"
+    bucket = "glojuara-terraform-remote-state"
     key    = "pipeline-aws-vpc/terraform.tfstate"
     region = "us-east-1"
   }
